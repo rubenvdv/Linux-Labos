@@ -253,7 +253,7 @@ Vele tekstbestanden zijn gestructureerd als tabellen, bv. CSV (comma-separated v
 6. Druk een gesorteerde lijst af van de gebruikers in `passwd` die Bash als shell hebben, samen met hun UID en home-directory
 
     ```
-    $ awk -F: ' $7 == "/bin/bash" { printf "%s:%s:%s\n", $1, $3, $6 }' passwd | sort
+    $ awk -F: ' $7 == "/bin/bash" { printf "%s:%s:%s\n", $1, $3, $6 }' passwd
     root:0:/root
     vagrant:1000:/home/vagrant
     student:1001:/home/student
